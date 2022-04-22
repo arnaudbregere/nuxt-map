@@ -1,0 +1,2 @@
+# nuxt-map
+OSM Nuxt
