@@ -67,3 +67,26 @@ More information about the usage of this directory in [the documentation](https:
 This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+
+
+
+### `GENERATION TUILES OPENSTREETMAP SUR LE SERVEUR LOCAL (FRANCE)`
+
+```
+docker run \
+    -v /home/arnaudbregere/Desktop/map-formation/Mapserver/Openstreetmap/Data/france-latest.osm.pbf:/data/region.osm.pbf \
+    -v osm-data:/data/database/ \
+    overv/openstreetmap-tile-server \
+    import
+```
+### `RUN SERVEUR OPENSTREETMAP`
+
+```
+docker run \
+    -p 8080:80 \
+    -v osm-data:/data/database/ \
+    -v osm-tiles:/data/tiles/ \
+    -d overv/openstreetmap-tile-server \
+    run
+```
+
