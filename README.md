@@ -78,7 +78,7 @@ npm i nuxt-leaflet --save
 ```
 
 
-### `GENERATION TUILES OPENSTREETMAP SUR LE SERVEUR LOCAL (FRANCE)`
+## `GENERATION TUILES OPENSTREETMAP SUR LE SERVEUR LOCAL (FRANCE)`
 
 ```
 docker run \
@@ -87,7 +87,7 @@ docker run \
     overv/openstreetmap-tile-server \
     import
 ```
-### `RUN SERVEUR OPENSTREETMAP`
+## `RUN SERVEUR OPENSTREETMAP`
 
 ```
 docker run \
